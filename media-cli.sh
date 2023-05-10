@@ -974,7 +974,7 @@ if [ $# -lt 1 ]; then
 fi
 
 update_script() {
-  update="$(curl -s -A "$agent" "https://raw.githubusercontent.com/Caivy/media-cli/main/media-cli")" || die "Connection error"
+  update="$(curl -s -A "$agent" "https://raw.githubusercontent.com/Caivy/media-cli/main/media-cli.sh")" || die "Connection error"
   update="$(printf '%s\n' "$update" | diff -u "$0" -)"
   if [ -z "$update" ]; then
     printf "Script is up to date :)\n"
