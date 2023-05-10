@@ -16,7 +16,7 @@ To install media-cli, follow the instructions for your respective operating syst
 
 - **Linux/MacOS**: Open the terminal and run the following command:
 ```sh
-$ curl -sL https://github.com/Caivy/media-cli/raw/main/installer.sh | bash
+git clone https://github.com/Caivy/media-cli.git
 ```
 - **Windows**:
 
@@ -24,28 +24,21 @@ $ curl -sL https://github.com/Caivy/media-cli/raw/main/installer.sh | bash
 
 First, you'll need windows terminal preview. [(Install)](https://apps.microsoft.com/store/detail/windows-terminal-preview/9N8G5RFZ9XK3?hl=de-at&gl=at&rtc=1)
 
-Then make sure git bash is installed. [(Install)](https://git-scm.com/download/win) It needs to be added to windows terminal [(Instructions)](https://stackoverflow.com/questions/56839307/adding-git-bash-to-the-new-windows-terminal)
-
-#### Scoop bucket
-
-```sh
-scoop bucket add extras
-scoop install media-cli
-```
+Then make sure git bash is installed. [(Install)](https://git-scm.com/download/win) It needs to be added to windows terminal [(Instructions)](https://stackoverflow.com/questions/56839307/adding-git-bash-to-the-new-windows-terminal) or Alternatively you could also just use the git bash from the official git pages 
 
 #### From installer
 ```sh
-$ curl -sL https://github.com/Caivy/media-cli/raw/main/installer.sh | bash
+git clone https://github.com/Caivy/media-cli.git
 ```
-
 - **Android (Termux)**: Open Termux and run the following command:
 ```bash
-$ curl -sL https://github.com/Caivy/media-cli/raw/main/installer.sh | bash
+git clone https://github.com/Caivy/media-cli.git
 ```
 - **iOS (iSH)**: Open iSH and run the following command:
 ```bash
-$ curl -sL https://github.com/Caivy/media-cli/raw/main/installer.sh | bash
+git clone https://github.com/Caivy/media-cli.git
 ```
+*** Make sure you have the media player of your choice installed, such as MPV or VLC. ***
 
 ## Usage
 
