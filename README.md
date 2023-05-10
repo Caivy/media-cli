@@ -1,6 +1,12 @@
 # media-cli
 
-media-cli is a command-line tool that allows you to watch anime and drama directly from your terminal. It provides a convenient and streamlined way to search and stream your favorite anime and drama series without leaving the command line.
+🚀 Media-CLI: Your command line companion for anime and drama! 🌟
+
+Streamline your binge-watching experience with Media-CLI. Say goodbye to tab overload and hello to convenience. 📺💻
+
+Discover, select, and stream your favorite shows effortlessly, all from your terminal. No distractions, just pure entertainment. 😎🍿
+
+Let Media-CLI be your guide to a world of anime and drama. Let the binge-watching begin! 🌟🎬
 
 ## Features
 
@@ -56,3 +62,17 @@ media-cli -u
 
 This command will automatically check for updates and apply them if available.
 
+## Contributing
+
+Please check out our [Contribution Guidelines](https://github.com/caivy/media-cli/blob/main/CONTRIBUTING.md) to contribute to Media-CLI. We welcome your contributions!
+
+## Issues
+
+If you encounter any bugs or have feature requests, please use our Issue Templates to report them:
+
+- [Bug Report](https://github.com/caivy/media-cli/blob/main/.github/ISSUE_TEMPLATE/bug_report.md)
+- [Feature Request](https://github.com/caivy/media-cli/blob/main/.github/ISSUE_TEMPLATE/feature_request.md)
+
+We appreciate your feedback!
+
+Enjoy your anime and drama streaming journey with Media-CLI! 🎉📺
