@@ -4,8 +4,6 @@ anime_query() {
     shift $((OPTIND - 1))
     query="$@"
 
-    version_number="4.2.7"
-
     # UI
 
     external_menu() {
@@ -35,10 +33,6 @@ anime_query() {
         exit 1
     }
 
-    version_info() {
-        printf "%s\n" "$version_number"
-        exit 0
-    }
 
 
     # checks if dependencies are present
@@ -300,7 +294,6 @@ anime_query() {
             : >"$histfile"
             exit 0
             ;;
-        -V | --version) version_info ;;
         -h | --help) help_info ;;
         -e | --episode | -r | --range)
             [ $# -lt 2 ] && die "missing argument!"
@@ -386,10 +379,6 @@ drama_query() {
 
     # shift $((OPTIND - 1))
     # query="$@"
-
-    version_text() {
-        inf "Version: $VERSION" >&2
-    }
 
     die() {
         err "$*"
@@ -774,10 +763,6 @@ drama_query() {
             v)
                 player_fn="vlc"
                 ;;
-            V)
-                version_text
-                exit 0
-                ;;
             *)
                 help_text
                 exit 1
@@ -899,8 +884,6 @@ help_info() {
             Specify the video quality
           -v, --vlc
             Use VLC to play the video
-          -V, --version
-            Show the version of the script
           -h, --help
             Show this help message and exit
           -e, --episode, -r, --range
@@ -932,7 +915,6 @@ help_info() {
           -q set video quality (best|worst|360|480|720|1080)
           -v use VLC as the media player
           -D delete history
-          -V print version number and exit
 
         Episode selection:
           Multiple episodes can be chosen given a range
@@ -988,9 +970,16 @@ update_script() {
   exit 0
 }
 
+version_info() {
+        printf "%s\n" "1.0.0"
+        exit 0
+    }
+
 # Check if update flag is provided
 if [[ "$1" == "-u" || "$1" == "--update" ]]; then
   update_script
+elif [[ "$1" == "-v" || "$1" == "--version" ]]; then
+  version_info
 fi
 
 # Parse the first argument and call the appropriate query function
