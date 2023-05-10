@@ -64,8 +64,8 @@ if [[ "$OSTYPE" == "linux-gnu"* ]]; then
 
 # Install media-cli on Windows using scoop
 elif [[ "$OSTYPE" == "msys" ]]; then
-  scoop bucket add extras
-  scoop install mpv
+#   scoop bucket add extras
+#   scoop install mpv
   
   if [ -d "media-cli" ]; then
     echo "media-cli directory already exists. Skipping git clone."
@@ -73,7 +73,7 @@ elif [[ "$OSTYPE" == "msys" ]]; then
     git clone "https://github.com/Caivy/media-cli.git"
   fi
   
-  sudo cp media-cli/media-cli /usr/local/bin
+  sudo cp -i -rf media-cli/media-cli /usr/bin/
   rm -rf media-cli
   
   git clone --depth 1 "https://github.com/junegunn/fzf.git" "$HOME/.fzf"
@@ -91,7 +91,7 @@ elif [[ "$OSTYPE" == "linux-android" ]]; then
     git clone "https://github.com/Caivy/media-cli.git"
   fi
   
-  cp media-cli/media-cli "$PREFIX"/bin
+  cp -i -rf media-cli/media-cli "$PREFIX"/bin
   rm -rf media-cli
     
   echo "media-cli installed successfully on Android!"
@@ -118,7 +118,7 @@ elif [[ "$OSTYPE" == "darwin"* && $(uname -p) == "arm" ]]; then
     git clone "https://github.com/Caivy/media-cli.git"
   fi
   
-  sudo cp media-cli/media-cli /usr/local/bin
+  sudo cp -i -rf media-cli/media-cli /usr/local/bin
   rm -rf media-cli
   
   echo "media-cli installed successfully on iOS!"

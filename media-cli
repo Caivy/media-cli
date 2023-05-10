@@ -437,7 +437,7 @@ drama_query() {
         tput clear
         [ ! -s "$logfile" ] && die "History is empty"
         search_results=$(
-            while read -r drama_id; do process_hist_entry &;done <"$logfile"
+            while read -r drama_id; do process_hist_entry &done <"$logfile"
             wait
         )
         [ -z "$search_results" ] && die "No unwatched episodes"
