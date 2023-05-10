@@ -38,7 +38,7 @@ git clone https://github.com/Caivy/media-cli.git
 ```bash
 git clone https://github.com/Caivy/media-cli.git
 ```
-*** Make sure you have the media player of your choice installed, such as MPV or VLC. ***
+***Make sure you have the media player of your choice installed, such as MPV or VLC.***
 
 ## Usage
 
